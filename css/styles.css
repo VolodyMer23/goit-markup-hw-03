@@ -1,0 +1,207 @@
+/* колір логотипу #2196F3 #000000 */
+/* основний колір тексту #212121 */
+/* додатковий колір тексту #757575 */
+/* колір почта та телефон #757575 */
+/* колір тексту секції "Hero" #FFFFFF */
+/* акцентуючий колір #2196F3 */
+/* колір секції адреси color: rgba(255, 255, 255, 0.6); */
+
+:root {
+    --main-color: #2196F3;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --button-text-color: #FFFFFF;
+    --contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    color: #212121;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;   
+}
+.link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+/* Логотип */
+
+.logo {
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-web {
+    color: #2196F3;
+}
+
+/* Навигация сайта */
+.sitenav {
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sitenav .link:hover,
+.sitenav .link:focus,
+.sitenav .link:active {
+    color: var(--main-color);
+}
+
+
+
+/* Футер */
+.footer {
+    background-color: #2F303A;
+}
+
+/* Контакти */
+.contacts .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--main-color);
+}
+
+/* Секція "Hero" */
+.hero .hero-post {
+    color: var(--button-text-color);
+    background-color: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color: var(--button-text-color);
+    background-color: var(--main-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188CE8;
+}
+
+/* Секція особливості */
+.feauters .feauters-post {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.feauters .feauters-text {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Секція послуги */
+.services-post {
+    color: var(--main-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+}
+
+/* Секція наша команда */
+.teams {
+    color: var(--main-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.team .team-post {
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.team .team-text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* Футер сторінки */
+.contact {
+    font-style: normal;
+    text-decoration: none;
+}
+.logo-studio {
+    color:#FFFFFF;
+}
+.adress .link {
+    color: var(--contacts-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.adress .map {
+    color: var(--button-text-color);
+    
+}
+
+/* Сторінка портфоліо 
+    Фільтри */
+.filter .portfolio-button {
+    color: var(--main-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.filter .portfolio-button:hover,
+.filter .portfolio-button:focus {
+    color: var(--button-text-color);
+    background-color: var(--main-color);
+}
+
+/* Галерея портфоліо */
+.portfolio .portfolio-post {
+   color: var(--main-text-color); 
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+
+.portfolio .portfolio-text {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
