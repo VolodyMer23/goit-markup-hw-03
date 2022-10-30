@@ -121,6 +121,11 @@ img {
   color: var(--main-color);
 }
 
+.sitenav .link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .sitenav > .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -267,7 +272,7 @@ img {
 /* Секція послуги */
 
 .services {
-padding-top: 0;
+  padding-top: 0;
 }
 
 .services > .container {
@@ -359,8 +364,6 @@ padding-top: 0;
 /* Сторінка портфоліо 
     Фільтри */
 .filter {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
