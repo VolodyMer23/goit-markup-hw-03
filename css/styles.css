@@ -94,8 +94,8 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   /* margin-right: 93px; */
   display: flex;
 }
@@ -118,9 +118,13 @@ img {
   color: var(--main-color);
 }
 
+.current {
+    color: var(--main-color);
+}
+
 .sitenav > .item {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .sitenav > .item:not(:last-child) {
@@ -139,8 +143,8 @@ img {
 }
 
 .contacts > .item {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     margin-left: 50px;
 }
 
@@ -187,12 +191,16 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.hero-title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+
+.hero .container {
+  padding-left: 200px;
+  padding-right: 200px;
 }
+
 .hero-post {
   color: var(--button-text-color);
   font-weight: 900;
@@ -211,6 +219,8 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  padding: 0;
+  margin: 0;
 
   min-width: 216px;
   height: 50px;
@@ -299,6 +309,7 @@ img {
 }
 
 .team-card {
+  background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom-left-radius: 4px;
@@ -392,7 +403,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
