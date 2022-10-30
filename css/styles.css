@@ -14,6 +14,7 @@
   --contacts-color: rgba(255, 255, 255, 0.6);
   --main-font-family: "Roboto", sans-serif;
   --item-grid-gap: 30px;
+  --header-items-gap: 50px;
 }
 
 * {
@@ -36,8 +37,8 @@ body {
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .section {
@@ -46,17 +47,17 @@ img {
 }
 
 .container {
-    display: flex;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .item {
-    display: block;
-    width: 270px;
+  display: block;
+  
 }
 
 .btn {
@@ -93,6 +94,10 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* margin-right: 93px; */
+  display: flex;
 }
 
 .logo-web {
@@ -104,6 +109,8 @@ img {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
+  display: flex;
+  margin-right: 194px;
 }
 
 .sitenav .link:hover,
@@ -111,9 +118,56 @@ img {
   color: var(--main-color);
 }
 
+.sitenav > .item {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.sitenav > .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.header-flex {
+    /* align-items: stretch; */
+ justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    
+}
+
+.contacts > .item {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 50px;
+}
+
 /* Футер */
 .footer {
   background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content > .logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.adress > .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* Контакти */
@@ -135,9 +189,9 @@ img {
   text-align: center;
 }
 .hero-title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-post {
   color: var(--button-text-color);
@@ -186,40 +240,40 @@ img {
 }
 
 .specialty-list {
-    display: flex;
-    margin-top: calc(-1 * var(--item-grid-gap));
-    margin-left: calc(-1 * var(--item-grid-gap));
+  display: flex;
+  margin-top: calc(-1 * var(--item-grid-gap));
+  margin-left: calc(-1 * var(--item-grid-gap));
 }
 
 .specialty-list > .item {
-    flex-basis: calc(100% / 4 - var(--item-grid-gap));
-    margin-top: var(--item-grid-gap);
-    margin-left: var(--item-grid-gap);
+  flex-basis: calc(100% / 4 - var(--item-grid-gap));
+  margin-top: var(--item-grid-gap);
+  margin-left: var(--item-grid-gap);
 }
 
 /* Секція послуги */
 
 .services {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .service-list {
-    margin-top: calc(-1 * var(--item-grid-gap));
-    margin-left: calc(-1 * var(--item-grid-gap));
-    display: inline-flex;
+  margin-top: calc(-1 * var(--item-grid-gap));
+  margin-left: calc(-1 * var(--item-grid-gap));
+  display: inline-flex;
 }
 
 .service-list > .item {
-    /* width: max-content; */
-    width: 370px;
-    flex-basis: calc(100% / 3 - var(--item-grid-gap));
-    margin-top: var(--item-grid-gap);
-    margin-left: var(--item-grid-gap);
+  /* width: max-content; */
+  width: 370px;
+  flex-basis: calc(100% / 3 - var(--item-grid-gap));
+  margin-top: var(--item-grid-gap);
+  margin-left: var(--item-grid-gap);
 }
 
 /* Секція наша команда */
 .our-team {
-    background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team-post {
@@ -239,24 +293,25 @@ img {
 }
 
 .team-list {
-    margin-top: calc(-1 * var(--item-grid-gap));
-    margin-left: calc(-1 * var(--item-grid-gap));
-    display: flex;
+  margin-top: calc(-1 * var(--item-grid-gap));
+  margin-left: calc(-1 * var(--item-grid-gap));
+  display: flex;
 }
 
 .team-card {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .team-list > .item {
-    text-align: center;
-    flex-basis: calc(100% / 3 - var(--item-grid-gap));
-    margin-top: var(--item-grid-gap);
-    margin-left: var(--item-grid-gap);   
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  flex-basis: calc(100% / 3 - var(--item-grid-gap));
+  margin-top: var(--item-grid-gap);
+  margin-left: var(--item-grid-gap);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Футер сторінки */
