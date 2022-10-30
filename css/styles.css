@@ -96,7 +96,6 @@ img {
   line-height: 1.19;
   padding-top: 25px;
   padding-bottom: 25px;
-  /* margin-right: 93px; */
   display: flex;
 }
 
@@ -163,6 +162,19 @@ img {
 .footer-content > .logo {
     margin-top: 0;
     margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
 }
 
 .adress {
@@ -191,14 +203,17 @@ img {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .hero .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-left: 200px;
   padding-right: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-post {
@@ -385,12 +400,18 @@ img {
 }
 
 /* Галерея портфоліо */
+.filters > .container {
+  flex-direction: column;
+}
+
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--item-grid-gap));
     margin-left: calc(-1 * var(--item-grid-gap));
 }
+
 
 .portfolio > .item {
     flex-basis: calc(100% / 3 - var(--item-grid-gap));
