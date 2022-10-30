@@ -336,6 +336,15 @@ img {
 
 /* Сторінка портфоліо 
     Фільтри */
+.filter {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .filter .portfolio-button {
   color: var(--main-text-color);
   font-family: inherit;
@@ -350,6 +359,14 @@ img {
   padding: 6px 22px;
 }
 
+.filter > .item {
+    display: block;
+}
+
+.filter > .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter .portfolio-button:hover,
 .filter .portfolio-button:focus {
   color: var(--button-text-color);
@@ -357,16 +374,38 @@ img {
 }
 
 /* Галерея портфоліо */
-.portfolio .portfolio-post {
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--item-grid-gap));
+    margin-left: calc(-1 * var(--item-grid-gap));
+}
+
+.portfolio > .item {
+    flex-basis: calc(100% / 3 - var(--item-grid-gap));
+    margin-top: var(--item-grid-gap);
+    margin-left: var(--item-grid-gap);
+}
+
+.portfolio-post {
   color: var(--main-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-bottom: 4px;
 }
 
-.portfolio .portfolio-text {
+.portfolio-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-card {
+    background-color : #FFFFFF;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
